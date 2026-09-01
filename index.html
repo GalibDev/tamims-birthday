@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>TAMIMs Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Click Here TAMIM
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="./images/tamim.jpeg" alt="">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Dear TAMIM</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <main class="birthdayExtras" aria-label="Birthday surprises">
+            <button class="featureBackdrop" type="button" aria-label="Close birthday surprise"></button>
+
+            <section class="themePanel extraCard" aria-labelledby="themeTitle" aria-hidden="true">
+                <div>
+                    <p class="eyebrow">Make it yours</p>
+                    <h2 id="themeTitle">Choose a birthday theme</h2>
+                </div>
+                <div class="themeSwitcher" role="group" aria-label="Color theme">
+                    <button class="themeButton isActive" type="button" data-theme="pink" aria-pressed="true">
+                        <span class="themeSwatch pinkSwatch" aria-hidden="true"></span>Pink
+                    </button>
+                    <button class="themeButton" type="button" data-theme="purple" aria-pressed="false">
+                        <span class="themeSwatch purpleSwatch" aria-hidden="true"></span>Purple
+                    </button>
+                    <button class="themeButton" type="button" data-theme="blue" aria-pressed="false">
+                        <span class="themeSwatch blueSwatch" aria-hidden="true"></span>Blue
+                    </button>
+                </div>
+            </section>
+
+            <section class="memorySection extraCard featureDialog" role="dialog" aria-modal="true" aria-labelledby="memoryTitle" aria-hidden="true">
+                <button class="featureClose" type="button" aria-label="Close memories">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <div class="sectionHeading">
+                    <div>
+                        <p class="eyebrow">A little trip down memory lane</p>
+                        <h2 id="memoryTitle">Our favorite memories</h2>
+                    </div>
+                    <div class="sliderControls">
+                        <button id="galleryPrev" type="button" aria-label="Previous memory">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        </button>
+                        <button id="galleryNext" type="button" aria-label="Next memory">
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="memorySlider" aria-roledescription="carousel">
+                    <div class="memoryTrack">
+                        <!-- Replace each dummy src below with your own photo path, for example: images/memory-1.jpg -->
+                        <article class="memorySlide isCurrent" aria-label="Memory 1 of 5">
+                            <img src="images/tamim.jpeg" alt="Dummy memory placeholder 1">
+                            <div class="memoryCaption"><span>01</span><h3>The smile that brightens every day</h3><p>Replace this with your favorite memory caption.</p></div>
+                        </article>
+                        <article class="memorySlide" aria-label="Memory 2 of 5" aria-hidden="true">
+                            <img src="images/tamim.jpeg" alt="Dummy memory placeholder 2">
+                            <div class="memoryCaption"><span>02</span><h3>One unforgettable moment</h3><p>Add the story behind your second photo here.</p></div>
+                        </article>
+                        <article class="memorySlide" aria-label="Memory 3 of 5" aria-hidden="true">
+                            <img src="images/tamim.jpeg" alt="Dummy memory placeholder 3">
+                            <div class="memoryCaption"><span>03</span><h3>Laughs worth remembering</h3><p>Write a short funny memory in this caption.</p></div>
+                        </article>
+                        <article class="memorySlide" aria-label="Memory 4 of 5" aria-hidden="true">
+                            <img src="images/tamim.jpeg" alt="Dummy memory placeholder 4">
+                            <div class="memoryCaption"><span>04</span><h3>A beautiful day together</h3><p>Replace this dummy photo and text from VS Code.</p></div>
+                        </article>
+                        <article class="memorySlide" aria-label="Memory 5 of 5" aria-hidden="true">
+                            <img src="images/tamim.jpeg" alt="Dummy memory placeholder 5">
+                            <div class="memoryCaption"><span>05</span><h3>More memories to come</h3><p>The best chapters of life are still ahead.</p></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="sliderDots" aria-label="Choose a memory"></div>
+            </section>
+
+            <section class="cakeSection extraCard featureDialog" role="dialog" aria-modal="true" aria-labelledby="cakeTitle" aria-hidden="true">
+                <button class="featureClose" type="button" aria-label="Close birthday cake">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <div class="cakeCopy">
+                    <p class="eyebrow">One last birthday wish</p>
+                    <h2 id="cakeTitle">Make a wish, Tamim!</h2>
+                    <p>Enable the microphone and blow steadily toward it to make your wish.</p>
+                    <button class="micBlowButton" id="micBlowButton" type="button" aria-pressed="false">
+                        <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+                        <span>Enable blow detection</span>
+                    </button>
+                    <p class="micStatus" aria-live="polite">Microphone is off. Enable it when you are ready to blow.</p>
+                    <div class="micPermissionHelp" hidden>
+                        <strong>Microphone is blocked in this browser.</strong>
+                        <span>Chrome/Edge desktop: click the lock icon beside the address, allow Microphone, then reload.</span>
+                        <span>iPhone Chrome: open iPhone Settings → Chrome → Microphone. Safari normally shows its own permission popup.</span>
+                    </div>
+                    <p class="cakeStatus" aria-live="polite">The candle is waiting for your wish ✨</p>
+                    <div class="wishReveal" aria-hidden="true">
+                        <p>May this new chapter bring you everything your heart wishes for.</p>
+                        <div class="wishWords" aria-label="Happiness, peace, success and beautiful memories">
+                            <span>Happiness</span><span>Peace</span><span>Success</span><span>Beautiful memories</span>
+                        </div>
+                    </div>
+                    <button class="relightCandleButton" id="relightCandleButton" type="button" hidden>
+                        <i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i>
+                        Relight candle
+                    </button>
+                </div>
+                <div class="candleButton">
+                    <span class="cake">
+                        <span class="candle">
+                            <span class="smokePuffs"><i></i><i></i><i></i></span>
+                            <span class="flame"></span>
+                            <button class="desktopFlameButton" type="button" aria-label="Extinguish candle flame"></button>
+                            <span class="wick"></span>
+                        </span>
+                        <span class="frosting frostingOne"></span>
+                        <span class="cakeLayer cakeLayerTop"></span>
+                        <span class="frosting frostingTwo"></span>
+                        <span class="cakeLayer cakeLayerBottom"></span>
+                        <span class="cakePlate"></span>
+                    </span>
+                </div>
+            </section>
+        </main>
+
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="" width="100">
+        </div>
+
+        <div class="homeCakeDecoration" aria-hidden="true">
+            <span class="homeCakeSpark sparkLeft">✦</span>
+            <span class="homeCakeSpark sparkRight">✦</span>
+            <span class="homeCakeFlame"></span>
+            <span class="homeCakeCandle"></span>
+            <span class="homeCakeFrosting"></span>
+            <span class="homeCakeBody"></span>
+            <span class="homeCakePlate"></span>
+        </div>
+
+        <div class="pageControls" aria-label="Birthday controls">
+            <button class="controlButton" id="memoriesButton" type="button" title="Open memories" aria-expanded="false">
+                <i class="fa-solid fa-images" aria-hidden="true"></i>
+                <span>Memories</span>
+            </button>
+            <button class="controlButton" id="cakeButton" type="button" title="Make a wish" aria-expanded="false">
+                <i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+                <span>Cake</span>
+            </button>
+            <button class="controlButton" id="themeButton" type="button" title="Change theme" aria-expanded="false">
+                <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                <span>Theme</span>
+            </button>
+            <button class="controlButton" id="musicToggle" type="button" aria-pressed="true" title="Music on — starts on your first tap if needed">
+                <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                <span>Music</span>
+            </button>
+            <button class="controlButton" id="replayButton" type="button" title="Replay animation">
+                <i class="fa-solid fa-rotate-right" aria-hidden="true"></i>
+                <span>Replay</span>
+            </button>
+        </div>
+
+        <div id="celebrationLayer" aria-hidden="true"></div>
+        <audio id="birthdayAudio" src="./music/birthdaymusic.mp3" loop preload="auto" autoplay playsinline></audio>
+
+        <div class="boxMail" role="dialog" aria-modal="true" aria-labelledby="letterTitle" aria-hidden="true">
+            <button class="closeMail" type="button" aria-label="Close birthday letter">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <div class="boxMail-container" role="document">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="images/tamim.jpeg" alt="Tamim">
+                    </div>
+                    <h4 class="username">To: Tamim 💖<span class="underline"></span></h4>
+
+                    <h3>Happy Birthday</h3>
+                    <p class="openHint">Opening your letter...</p>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <div class="letterMewmew" aria-hidden="true">
+                            <img src="./images/mewmew.gif" alt="">
+                        </div>
+                        <h3 id="letterTitle">To You!</h3>
+                        <h2>Happy Birthday, Tamim! 🥳🎂🥳 From the day we became friends, I never imagined we'd create so many beautiful and unforgettable memories together, but little by little you became someone very special to me. ❤️
+
+Always remember, I'm here for you 🤗 whenever you need me. You can talk to me anytime, especially about the things you can't share with anyone else. I pray this year brings you happiness, success, peace, and takes you closer to becoming the ML/AI Engineer you dream of. 🤖💻✨
+
+I also hope you keep doing well in your studies and continue helping us just like you always do. 📚🤍 Your support truly means a lot. 💖 Stay blessed, stay happy, and keep shining always. 🌟😊
+
+Once again, Happy Birthday to you, Tamim! 🎉🎈💖
+
+
+                        </h2>
+                        <div class="letterSignature">
+                            <span>With lots of good wishes 💖</span>
+                            <strong>— Galib</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const wrapper = document.querySelector('#wrapper');
+    const dateBox = document.querySelector('.date__of__birth');
+    const dateText = dateBox.querySelector('span');
+    const letterButton = document.querySelector('#btn__letter');
+    const boxMail = document.querySelector('.boxMail');
+    const closeMailButton = document.querySelector('.closeMail');
+    const celebrationLayer = document.querySelector('#celebrationLayer');
+    const musicToggle = document.querySelector('#musicToggle');
+    const replayButton = document.querySelector('#replayButton');
+    const birthdayExtras = document.querySelector('.birthdayExtras');
+    const featureBackdrop = document.querySelector('.featureBackdrop');
+    const memorySection = document.querySelector('.memorySection');
+    const cakeSection = document.querySelector('.cakeSection');
+    const themePanel = document.querySelector('.themePanel');
+    const memoriesButton = document.querySelector('#memoriesButton');
+    const cakeButton = document.querySelector('#cakeButton');
+    const themeButton = document.querySelector('#themeButton');
+    const memoryTrack = document.querySelector('.memoryTrack');
+    const memorySlides = [...document.querySelectorAll('.memorySlide')];
+    const sliderDots = document.querySelector('.sliderDots');
+    const galleryPrev = document.querySelector('#galleryPrev');
+    const galleryNext = document.querySelector('#galleryNext');
+    const candleButton = document.querySelector('.candleButton');
+    const cakeStatus = document.querySelector('.cakeStatus');
+    const micBlowButton = document.querySelector('#micBlowButton');
+    const micStatus = document.querySelector('.micStatus');
+    const wishReveal = document.querySelector('.wishReveal');
+    const relightCandleButton = document.querySelector('#relightCandleButton');
+    const micPermissionHelp = document.querySelector('.micPermissionHelp');
+    const desktopFlameButton = document.querySelector('.desktopFlameButton');
+    const birthdayAudio = document.querySelector('#birthdayAudio');
+    const birthdayDate = '30 AUGUST';
+    let dateTimer;
+    let dateStartTimer;
+    let letterOpenTimer;
+    let lastFocusedElement;
+    let featureLastFocus;
+    let openFeatureName = '';
+    let blowStream;
+    let blowAudioContext;
+    let blowAnalyser;
+    let blowAnimationFrame;
+    let blowStartedAt = 0;
+    let blowBaseline = 0;
+    let blowCalibrationSamples = 0;
+    let blowRequestPending = false;
+
+    function typeBirthdayDate() {
+        clearInterval(dateTimer);
+        dateText.textContent = '';
+        dateBox.querySelectorAll('i').forEach(icon => icon.remove());
+        let index = 0;
+        dateTimer = setInterval(() => {
+            if (index < birthdayDate.length) {
+                dateText.textContent += birthdayDate[index++];
+                return;
+            }
+            clearInterval(dateTimer);
+            const star = document.createElement('i');
+            star.className = 'fa-solid fa-star';
+            dateBox.prepend(star);
+            dateBox.append(star.cloneNode(true));
+        }, 90);
+    }
+
+    function scheduleBirthdayDate() {
+        clearInterval(dateTimer);
+        clearTimeout(dateStartTimer);
+        dateText.textContent = '';
+        dateStartTimer = window.setTimeout(typeBirthdayDate, 6400);
+    }
+
+    function celebrate(originX = '50vw', originY = '58vh') {
+        const colors = ['#ff7882', '#ffd166', '#ffffff', '#ff9aa2', '#9bf6ff'];
+        celebrationLayer.replaceChildren();
+        celebrationLayer.style.setProperty('--burst-x', originX);
+        celebrationLayer.style.setProperty('--burst-y', originY);
+        for (let index = 0; index < 60; index++) {
+            const particle = document.createElement('span');
+            const isHeart = index % 5 === 0;
+            particle.className = `celebrationParticle${isHeart ? ' heartParticle' : ''}`;
+            particle.textContent = isHeart ? '♥' : '';
+            particle.style.setProperty('--x', `${(Math.random() - .5) * 110}vw`);
+            particle.style.setProperty('--y', `${-20 - Math.random() * 75}vh`);
+            particle.style.setProperty('--r', `${Math.random() * 720 - 360}deg`);
+            particle.style.setProperty('--delay', `${Math.random() * .25}s`);
+            particle.style.setProperty('--color', colors[Math.floor(Math.random() * colors.length)]);
+            celebrationLayer.appendChild(particle);
+        }
+        window.setTimeout(() => celebrationLayer.replaceChildren(), 2400);
+    }
+
+    function openLetter() {
+        closeFeatures(false);
+        lastFocusedElement = document.activeElement;
+        clearTimeout(letterOpenTimer);
+        boxMail.classList.add('active');
+        boxMail.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modalOpen');
+        celebrate();
+        letterOpenTimer = window.setTimeout(() => boxMail.classList.add('opened'), 450);
+        window.setTimeout(() => closeMailButton.focus(), 520);
+    }
+
+    function closeLetter() {
+        clearTimeout(letterOpenTimer);
+        boxMail.classList.remove('active', 'opened');
+        boxMail.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modalOpen');
+        if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    function replayAnimation() {
+        closeLetter();
+        closeFeatures(false);
+        scheduleBirthdayDate();
+        candleButton.classList.remove('isOut');
+        cakeStatus.textContent = 'The candle is waiting for your wish ✨';
+        wishReveal.classList.remove('isVisible');
+        wishReveal.setAttribute('aria-hidden', 'true');
+        relightCandleButton.hidden = true;
+        wrapper.classList.add('replayReset');
+        void wrapper.offsetWidth;
+        wrapper.classList.remove('replayReset');
+        celebrate();
+    }
+
+    letterButton.addEventListener('click', openLetter);
+    closeMailButton.addEventListener('click', closeLetter);
+    boxMail.addEventListener('click', event => {
+        if (event.target === boxMail) closeLetter();
+    });
+
+    const featurePanels = {
+        memories: memorySection,
+        cake: cakeSection,
+        theme: themePanel
+    };
+    const featureButtons = {
+        memories: memoriesButton,
+        cake: cakeButton,
+        theme: themeButton
+    };
+
+    function closeFeatures(restoreFocus = true) {
+        if (blowStream || blowAudioContext) stopBlowDetection();
+        Object.values(featurePanels).forEach(panel => {
+            panel.classList.remove('isOpen');
+            panel.setAttribute('aria-hidden', 'true');
+        });
+        Object.values(featureButtons).forEach(button => button.setAttribute('aria-expanded', 'false'));
+        birthdayExtras.classList.remove('hasModal', 'hasPopover');
+        if (!boxMail.classList.contains('active')) document.body.classList.remove('modalOpen');
+        openFeatureName = '';
+        if (restoreFocus && featureLastFocus) featureLastFocus.focus();
+    }
+
+    function openFeature(name) {
+        const shouldClose = openFeatureName === name;
+        closeFeatures(false);
+        if (shouldClose) return;
+        if (name === 'cake') pauseBirthdayMusic();
+        const panel = featurePanels[name];
+        const opener = featureButtons[name];
+        featureLastFocus = opener;
+        openFeatureName = name;
+        panel.classList.add('isOpen');
+        panel.setAttribute('aria-hidden', 'false');
+        opener.setAttribute('aria-expanded', 'true');
+        birthdayExtras.classList.add(name === 'theme' ? 'hasPopover' : 'hasModal');
+        if (name !== 'theme') {
+            document.body.classList.add('modalOpen');
+            window.setTimeout(() => panel.querySelector('.featureClose').focus(), 250);
+        }
+    }
+
+    memoriesButton.addEventListener('click', () => openFeature('memories'));
+    cakeButton.addEventListener('click', () => openFeature('cake'));
+    themeButton.addEventListener('click', () => openFeature('theme'));
+    featureBackdrop.addEventListener('click', () => closeFeatures());
+    document.querySelectorAll('.featureClose').forEach(button => {
+        button.addEventListener('click', () => closeFeatures());
+    });
+
+    replayButton.addEventListener('click', replayAnimation);
+    document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape') return;
+        if (boxMail.classList.contains('active')) closeLetter();
+        else if (openFeatureName) closeFeatures();
+    });
+    document.addEventListener('pointerdown', event => {
+        if (openFeatureName !== 'theme') return;
+        if (!event.target.closest('.themePanel, #themeButton')) closeFeatures(false);
+    });
+
+    let currentSlide = 0;
+
+    function showSlide(nextIndex) {
+        currentSlide = (nextIndex + memorySlides.length) % memorySlides.length;
+        memoryTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+        memorySlides.forEach((slide, index) => {
+            const isCurrent = index === currentSlide;
+            slide.classList.toggle('isCurrent', isCurrent);
+            slide.setAttribute('aria-hidden', String(!isCurrent));
+        });
+        [...sliderDots.children].forEach((dot, index) => {
+            dot.classList.toggle('isActive', index === currentSlide);
+            dot.setAttribute('aria-pressed', String(index === currentSlide));
+        });
+    }
+
+    memorySlides.forEach((slide, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Show memory ${index + 1}`);
+        dot.setAttribute('aria-pressed', String(index === 0));
+        if (index === 0) dot.classList.add('isActive');
+        dot.addEventListener('click', () => showSlide(index));
+        sliderDots.appendChild(dot);
+    });
+
+    galleryPrev.addEventListener('click', () => showSlide(currentSlide - 1));
+    galleryNext.addEventListener('click', () => showSlide(currentSlide + 1));
+
+    let swipeStartX = 0;
+    memoryTrack.addEventListener('pointerdown', event => {
+        swipeStartX = event.clientX;
+    });
+    memoryTrack.addEventListener('pointerup', event => {
+        const distance = event.clientX - swipeStartX;
+        if (Math.abs(distance) > 45) showSlide(currentSlide + (distance < 0 ? 1 : -1));
+    });
+
+    document.querySelectorAll('.themeButton').forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedTheme = button.dataset.theme;
+            document.documentElement.dataset.theme = selectedTheme;
+            document.querySelectorAll('.themeButton').forEach(themeButton => {
+                const isSelected = themeButton === button;
+                themeButton.classList.toggle('isActive', isSelected);
+                themeButton.setAttribute('aria-pressed', String(isSelected));
+            });
+        });
+    });
+
+    async function stopBlowDetection(message = 'Microphone is off. Enable it when you are ready to blow.') {
+        if (blowAnimationFrame) cancelAnimationFrame(blowAnimationFrame);
+        blowAnimationFrame = undefined;
+        blowStartedAt = 0;
+        if (blowStream) blowStream.getTracks().forEach(track => track.stop());
+        blowStream = undefined;
+        if (blowAudioContext && blowAudioContext.state !== 'closed') await blowAudioContext.close();
+        blowAudioContext = undefined;
+        blowAnalyser = undefined;
+        micBlowButton.setAttribute('aria-pressed', 'false');
+        micBlowButton.querySelector('span').textContent = 'Enable blow detection';
+        micBlowButton.querySelector('i').className = 'fa-solid fa-microphone';
+        micStatus.classList.remove('isListening');
+        micStatus.textContent = message;
+    }
+
+    async function requestBlowMicrophone() {
+        if (!navigator.mediaDevices?.getUserMedia) {
+            throw new Error('Microphone access is not supported in this browser.');
+        }
+        blowStream = await navigator.mediaDevices.getUserMedia({
+            audio: {
+                echoCancellation: false,
+                noiseSuppression: false,
+                autoGainControl: false
+            }
+        });
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        blowAudioContext = new AudioContextClass();
+        await blowAudioContext.resume();
+        const microphoneSource = blowAudioContext.createMediaStreamSource(blowStream);
+        blowAnalyser = blowAudioContext.createAnalyser();
+        blowAnalyser.fftSize = 1024;
+        blowAnalyser.smoothingTimeConstant = .2;
+        microphoneSource.connect(blowAnalyser);
+    }
+
+    function readMicrophoneVolume() {
+        const samples = new Uint8Array(blowAnalyser.fftSize);
+        blowAnalyser.getByteTimeDomainData(samples);
+        let energy = 0;
+        samples.forEach(sample => {
+            const normalizedSample = (sample - 128) / 128;
+            energy += normalizedSample * normalizedSample;
+        });
+        return Math.sqrt(energy / samples.length);
+    }
+
+    function monitorForBlow(timestamp) {
+        if (!blowAnalyser) return;
+        const volume = readMicrophoneVolume();
+        if (blowCalibrationSamples < 45) {
+            blowBaseline = ((blowBaseline * blowCalibrationSamples) + volume) / (blowCalibrationSamples + 1);
+            blowCalibrationSamples++;
+            blowAnimationFrame = requestAnimationFrame(monitorForBlow);
+            return;
+        }
+
+        const blowThreshold = Math.max(.045, blowBaseline * 3);
+        if (volume > blowThreshold) {
+            if (!blowStartedAt) blowStartedAt = timestamp;
+            if (timestamp - blowStartedAt > 320) {
+                extinguishCandle();
+                stopBlowDetection('Blow detected — microphone is now off. 🎉');
+                return;
+            }
+        } else {
+            blowStartedAt = 0;
+        }
+        blowAnimationFrame = requestAnimationFrame(monitorForBlow);
+    }
+
+    async function startBlowDetection() {
+        if (blowRequestPending || blowStream || blowAudioContext) return;
+        blowRequestPending = true;
+        micStatus.textContent = 'Opening microphone… allow access when your browser asks.';
+        micPermissionHelp.hidden = true;
+        micBlowButton.disabled = true;
+        micBlowButton.querySelector('span').textContent = 'Opening microphone…';
+        micBlowButton.querySelector('i').className = 'fa-solid fa-spinner fa-spin';
+        try {
+            await requestBlowMicrophone();
+            if (!cakeSection.classList.contains('isOpen')) {
+                await stopBlowDetection();
+                return;
+            }
+            blowBaseline = 0;
+            blowCalibrationSamples = 0;
+            blowStartedAt = 0;
+            micBlowButton.setAttribute('aria-pressed', 'true');
+            micBlowButton.querySelector('span').textContent = 'Microphone listening';
+            micBlowButton.querySelector('i').className = 'fa-solid fa-wave-square';
+            micStatus.classList.add('isListening');
+            micStatus.textContent = 'Listening… bring the phone close and blow steadily toward the microphone.';
+            micPermissionHelp.hidden = true;
+            blowAnimationFrame = requestAnimationFrame(monitorForBlow);
+        } catch (error) {
+            if (error.name === 'NotAllowedError') micPermissionHelp.hidden = false;
+            await stopBlowDetection(
+                error.name === 'NotAllowedError'
+                    ? 'Microphone permission was denied. Allow microphone access to blow out the candle.'
+                    : 'Microphone could not start. Please check the browser microphone permission.'
+            );
+        } finally {
+            blowRequestPending = false;
+            micBlowButton.disabled = false;
+        }
+    }
+
+    micBlowButton.addEventListener('click', () => {
+        if (micBlowButton.getAttribute('aria-pressed') === 'true') stopBlowDetection();
+        else startBlowDetection();
+    });
+
+    function extinguishCandle(source = 'blow') {
+        if (candleButton.classList.contains('isOut')) return;
+        const candlePosition = candleButton.getBoundingClientRect();
+        candleButton.classList.add('isOut');
+        cakeStatus.textContent = source === 'click'
+            ? 'The flame is out! Your wish is on its way, Tamim! 🎉💖'
+            : 'You blew it out! Your wish is on its way, Tamim! 🎉💖';
+        wishReveal.classList.add('isVisible');
+        wishReveal.setAttribute('aria-hidden', 'false');
+        relightCandleButton.hidden = false;
+        celebrate(`${candlePosition.left + candlePosition.width / 2}px`, `${candlePosition.top + 35}px`);
+        playBirthdayMusic();
+    }
+
+    function relightCandle() {
+        candleButton.classList.remove('isOut');
+        cakeStatus.textContent = 'The candle is glowing again. Enable the microphone when you are ready ✨';
+        wishReveal.classList.remove('isVisible');
+        wishReveal.setAttribute('aria-hidden', 'true');
+        relightCandleButton.hidden = true;
+        micStatus.textContent = 'Microphone is off. Enable it when you are ready to blow.';
+    }
+
+    relightCandleButton.addEventListener('click', relightCandle);
+
+    desktopFlameButton.addEventListener('click', () => {
+        extinguishCandle('click');
+        if (blowStream || blowAudioContext) stopBlowDetection('Flame clicked — microphone is now off.');
+    });
+
+    function createFloatingHeart(x, y) {
+        const heart = document.createElement('span');
+        heart.className = 'floatingTapHeart';
+        heart.textContent = Math.random() > .35 ? '♥' : '♡';
+        heart.style.left = `${x}px`;
+        heart.style.top = `${y}px`;
+        heart.style.setProperty('--drift', `${(Math.random() - .5) * 90}px`);
+        heart.style.setProperty('--heart-size', `${16 + Math.random() * 20}px`);
+        document.body.appendChild(heart);
+        window.setTimeout(() => heart.remove(), 1500);
+    }
+
+    document.addEventListener('pointerdown', event => {
+        if (!event.isPrimary || event.target.closest('button, a, .boxMail, .birthdayExtras')) return;
+        createFloatingHeart(event.clientX, event.clientY);
+    });
+
+    birthdayAudio.volume = .6;
+    let musicEnabled = true;
+
+    function updateMusicButton(isPlaying, title) {
+        musicToggle.setAttribute('aria-pressed', String(isPlaying));
+        musicToggle.title = title;
+        musicToggle.querySelector('i').className = isPlaying
+            ? 'fa-solid fa-volume-high'
+            : 'fa-solid fa-volume-xmark';
+    }
+
+    async function playBirthdayMusic() {
+        musicEnabled = true;
+        try {
+            await birthdayAudio.play();
+            if (!musicEnabled) {
+                birthdayAudio.pause();
+                return false;
+            }
+            updateMusicButton(true, 'Stop music');
+            return true;
+        } catch {
+            if (musicEnabled) updateMusicButton(true, 'Music on — starts on your first tap if needed');
+            return false;
+        }
+    }
+
+    function pauseBirthdayMusic() {
+        musicEnabled = false;
+        birthdayAudio.pause();
+        updateMusicButton(false, 'Play music');
+    }
+
+    function removeMusicUnlockListeners() {
+        document.removeEventListener('touchstart', unlockDefaultMusic, true);
+        document.removeEventListener('pointerdown', unlockDefaultMusic, true);
+        document.removeEventListener('click', unlockDefaultMusic, true);
+        document.removeEventListener('keydown', unlockDefaultMusic);
+    }
+
+    async function unlockDefaultMusic(event) {
+        if (event?.target instanceof Element && event.target.closest('#musicToggle')) return;
+        if (!musicEnabled) return;
+        if (await playBirthdayMusic()) {
+            removeMusicUnlockListeners();
+        }
+    }
+
+    musicToggle.addEventListener('click', () => {
+        if (musicEnabled) pauseBirthdayMusic();
+        else playBirthdayMusic();
+    });
+    birthdayAudio.addEventListener('play', () => {
+        if (musicEnabled) updateMusicButton(true, 'Stop music');
+        else birthdayAudio.pause();
+    });
+    birthdayAudio.addEventListener('pause', () => {
+        updateMusicButton(
+            musicEnabled,
+            musicEnabled ? 'Music on — starts on your first tap if needed' : 'Play music'
+        );
+    });
+    document.addEventListener('touchstart', unlockDefaultMusic, { capture: true, passive: true });
+    document.addEventListener('pointerdown', unlockDefaultMusic, true);
+    document.addEventListener('click', unlockDefaultMusic, true);
+    document.addEventListener('keydown', unlockDefaultMusic);
+    birthdayAudio.addEventListener('canplaythrough', () => {
+        if (musicEnabled) playBirthdayMusic();
+    }, { once: true });
+    window.addEventListener('pageshow', () => {
+        if (musicEnabled) playBirthdayMusic();
+    }, { once: true });
+    playBirthdayMusic();
+    scheduleBirthdayDate();
+</script>
+
+</html>
